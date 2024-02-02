@@ -1,10 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
 
 // Reard Gjoni
-// 31.01.2024
+// 03.02.2024
 // Kata link: https://www.codewars.com/kata/5277c8a221e209d3f6000b56/train/csharp
 
 namespace Exercises.ValidBraces
