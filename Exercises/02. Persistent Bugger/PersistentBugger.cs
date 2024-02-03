@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace Exercises.Persistent_Bugger
 {
-    public class Brace
+    public class PersistentBugger
     {
         public static int Persistence(long n)
         {

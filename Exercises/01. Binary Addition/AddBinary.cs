@@ -13,8 +13,6 @@ namespace Exercises.Binary_Addition
             int Result = (a + b);
             string ResultToBinaryString = Convert.ToString(Result, 2);
 
-            //Console.WriteLine(ResultToBinaryString);
-
             return ResultToBinaryString;
         }
     }

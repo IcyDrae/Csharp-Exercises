@@ -58,18 +58,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Binary Addition\AddBinary.cs" />
-    <Compile Include="Valid Braces\Brace.cs" />
-    <Compile Include="Persistent Bugger\PersistentBugger.cs" />
+    <Compile Include="01. Binary Addition\AddBinary.cs" />
+    <Compile Include="04. Jaden Casing Strings\JadenCase.cs" />
+    <Compile Include="03. Valid Braces\Brace.cs" />
+    <Compile Include="02. Persistent Bugger\PersistentBugger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
