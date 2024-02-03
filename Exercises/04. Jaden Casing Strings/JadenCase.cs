@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using System.Text;
+﻿using System.Text;
 
 // Reard Gjoni
 // 03.02.2024
@@ -14,27 +11,18 @@ namespace Exercises.JadenCasingStrings
         public static string ToJadenCase(this string phrase)
         {
             string[] PhraseSeparatedBySpaces = phrase.Split(' ');
-            StringBuilder NewPhrase = new StringBuilder(phrase);
-            List<string> NewWordsList = new List<string>(){};
+            StringBuilder NewPhrase = new StringBuilder();
 
-            // TODO: use Substring
             foreach (string Word in PhraseSeparatedBySpaces)
             {
-                NewWordsList.Add(Word);
-                //NewWord[0] = Word[0].ToString().ToUpper();
-                NewPhrase.Append(Word + ' ');
+                string UpperCaseFirstLetter = Word[0].ToString().ToUpper();
+                string RestOfWord = Word.Substring(1);
+                string NewWord = UpperCaseFirstLetter + RestOfWord;
 
-                //NewWordFirstLetter = Word[0].ToString().ToUpper();
+                NewPhrase.Append(NewWord + ' ');
             }
 
-            NewWordsList.ForEach(word =>
-            {
-                word[0].ToString().ToUpper();
-            });
-
-            NewWordsList.ForEach(Console.WriteLine);
-
-            return string.Empty;
+            return NewPhrase.ToString().Trim(' ');
         }
     }
 }
