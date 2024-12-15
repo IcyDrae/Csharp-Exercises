@@ -1,5 +1,8 @@
 .vs
-Exercises/.vs
-Exercises/bin
-Exercises/obj
-Exercises/packages
+Codewars/.vs
+Codewars/bin
+Codewars/obj
+Codewars/packages
+
+LeetCode/01-Top Interview 150/obj
+LeetCode/01-Top Interview 150/bin
