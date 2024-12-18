@@ -1,11 +1,13 @@
-﻿using PalindromeNumber;
+﻿using ValidAnagram;
 
 Solution solution = new Solution();
 
 // Test cases
 // Output: true
-Console.WriteLine(solution.IsPalindrome(121));
+Console.WriteLine(solution.IsAnagram("anagram", "nagaram"));
 // Output: false
-Console.WriteLine(solution.IsPalindrome(-121));
-// Output: false
-Console.WriteLine(solution.IsPalindrome(10));
+Console.WriteLine(solution.IsAnagram("rat", "car"));
+
+
+
+
