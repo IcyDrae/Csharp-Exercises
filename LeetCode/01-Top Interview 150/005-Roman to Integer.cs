@@ -78,8 +78,8 @@ then we have a smaller one than the next one, which means we have to do
 operations by pairs. Does that mean two loops so we can get the next number?
 
 No. Loop once, if the current roman number is smaller than the next, subtract
-the current number from the next one, and then go to the next roman numeral
-and add to it so we can even out.
+the current number from the next one, and then skip the next character because
+it has already been used.
 */
         public int RomanToInt(string s)
         {
