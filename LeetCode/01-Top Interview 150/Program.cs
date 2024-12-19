@@ -1,15 +1,13 @@
-﻿using RomanToInteger;
+﻿using LongestCommonPrefix;
 
 Solution solution = new Solution();
 
 // Test cases
-// Output: 3
-Console.WriteLine(solution.RomanToInt("III"));
-// Output: 58
-Console.WriteLine(solution.RomanToInt("LVIII"));
-// Output: 1994
-Console.WriteLine(solution.RomanToInt("MCMXCIV"));
-
-
-
-
+// Output: fl
+Console.WriteLine(
+    solution.LongestCommonPrefix(["flower","flow","flight"])
+);
+// Output: ""
+Console.WriteLine(
+    solution.LongestCommonPrefix(["dog","racecar","car"])
+);
