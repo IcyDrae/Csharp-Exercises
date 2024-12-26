@@ -1,13 +1,17 @@
-﻿using LongestCommonPrefix;
+﻿using MaximumSubarray;
 
 Solution solution = new Solution();
 
 // Test cases
-// Output: fl
+// Output: 6
 Console.WriteLine(
-    solution.LongestCommonPrefix(["flower","flow","flight"])
+    solution.MaxSubArray([-2,1,-3,4,-1,2,1,-5,4])
 );
-// Output: ""
+// Output: 1
 Console.WriteLine(
-    solution.LongestCommonPrefix(["dog","racecar","car"])
+    solution.MaxSubArray([1])
+);
+// Output: 23
+Console.WriteLine(
+    solution.MaxSubArray([5,4,-1,7,8])
 );
