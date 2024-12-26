@@ -1,17 +1,17 @@
-﻿using MaximumSubarray;
+﻿using ClimbingStairs;
 
 Solution solution = new Solution();
 
 // Test cases
-// Output: 6
+// Output: 5
 Console.WriteLine(
-    solution.MaxSubArray([-2,1,-3,4,-1,2,1,-5,4])
+    solution.ClimbStairs(4)
 );
-// Output: 1
+// Output: 2
 Console.WriteLine(
-    solution.MaxSubArray([1])
+    solution.ClimbStairs(2)
 );
-// Output: 23
+// Output: 3
 Console.WriteLine(
-    solution.MaxSubArray([5,4,-1,7,8])
+    solution.ClimbStairs(3)
 );
