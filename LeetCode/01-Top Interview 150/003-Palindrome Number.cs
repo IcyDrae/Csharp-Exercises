@@ -69,6 +69,22 @@ That seems like an extra responsibility for the algorithm.
             }
 
             return true;
+/*
+Worst-Case time complexity analysis:
+
+Key operations:
+1. for loop
+    -> runs from the first digit and the last digit toward the middle
+        until the middle digit is reached
+    -> both pointers move inward, reducing the range by
+        2 digits per iteration
+    -> for a string of length n, the loop runs at most n/2 iterations
+2. the comparison "Number[Left] != Number[Right]"
+    -> runs in constant time
+
+The Worst-Case complexity is O(n) because constants like 1/2 are ignored
+in Big O notation. The complexity simplifies to O(n).
+*/
         }
     }
 }

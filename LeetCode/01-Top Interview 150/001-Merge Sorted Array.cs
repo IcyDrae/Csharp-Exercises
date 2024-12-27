@@ -76,21 +76,21 @@ namespace MergeSortedArray
                 nums1[FinalNums1Pointer--] = nums2[Nums2Pointer--];
             }
 
-            /*
-            Worst-Case time complexity analysis:
+/*
+Worst-Case time complexity analysis:
 
-            Key operations:
-            1. first while loop
-                -> compares and moves elements froms nums1 and nums2 into
-                their correct positions
-                -> runs n+m times for n=Nums1Pointer and m=Nums2Pointer
-            2. second while loop
-                -> moves remaining elements from nums2 into nums1
-                -> runs n times for n=Nums2Pointer
+Key operations:
+1. first while loop
+    -> compares and moves elements froms nums1 and nums2 into
+    their correct positions
+    -> runs n+m times for n=Nums1Pointer and m=Nums2Pointer
+2. second while loop
+    -> moves remaining elements from nums2 into nums1
+    -> runs n times for n=Nums2Pointer
 
-            The Worst-Case complexity is O(n+m) because all elements
-            from both arrays are processed exactly once across both loops.
-            */
+The Worst-Case complexity is O(n+m) because all elements
+from both arrays are processed exactly once across both loops.
+*/
 
             // Output
             foreach (int num in nums1) {
