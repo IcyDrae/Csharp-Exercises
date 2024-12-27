@@ -94,6 +94,26 @@ anagram of 's'.
             }
 
             return true;
+/*
+Worst-Case time complexity analysis:
+
+Key operations:
+1. first for loop
+    -> runs from the beginning to the end of "s"
+    -> increments the letter frequency
+    -> for a string of length n, the loop runs at most n iterations
+2. second for loop
+    -> runs from the beginning to the end of "t"
+    -> decrements the letter frequency
+    -> for a string of length n, the loop runs at most n iterations
+3. third for loop
+    -> runs from the beginning to the end of the fixed size "Frequency"
+    -> checks if each letter is zero and exits quickly to save time
+    -> for an array of length 26, the loop runs at most 26 iterations
+
+The Worst-Case complexity is O(n) where n = max(ns, nt) -> the length of
+the longer string.
+*/
         }
     }
 }
