@@ -75,6 +75,27 @@ prefix.
             }
 
             return Prefix;
+/*
+Worst-Case time complexity analysis:
+
+Key operations:
+1. The for loop
+    -> Runs from the second element to the end of "strs"
+    -> For a string of length k, the loop runs at most k-1 times.
+2. The while loop
+    -> For each iteration of the for loop, it checks whether the current
+        word contains the prefix from its beginning
+    -> It does so letter by letter, though a built-in method is used.
+    -> For the longest string in "strs" of length n,
+        & the length of the current prefix p, the while loop can iterate
+        up to p times for each string.
+
+For each string the while loop can run up to n times, and each iteration of
+"StartsWith" takes O(p). Therefore, the total work for one string is O(n²).
+Across k strings, the total work becomes O(k * n²).
+
+The Worst-Case complexity is O(k * n²).
+*/
         }
     }
 }
