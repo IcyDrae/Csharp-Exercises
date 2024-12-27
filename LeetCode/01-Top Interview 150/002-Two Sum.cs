@@ -82,6 +82,24 @@ that work. Is there a more efficient way?
             }
 
             return new int[] {FirstElementIndex, SecondElementIndex};
+
+            /*
+            Worst-Case time complexity analysis:
+
+            Key operations:
+            1. first and second loops, nested loops
+                -> compares the nth and n+1th elements if their sum equals
+                    up to the target(creates pairs)
+                -> runs n² times
+            2. the comparison "(nums[i] + nums[j]) == target"
+                -> constant time operation and does not change
+                the overall complexity
+
+            The Worst-Case complexity is O(n²) because the nested loops run
+            for all possible direct pairs of elements, which is quadratic
+            in the size of the array. As n increases, the number of iterations
+            grows quadratically.
+            */
         }
     }
 }

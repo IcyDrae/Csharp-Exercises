@@ -3,9 +3,9 @@
 Solution solution = new Solution();
 
 // Test cases
-// Output: 5
+// Output: 9
 Console.WriteLine(
-    solution.ClimbStairs(4)
+    solution.ClimbStairs(6)
 );
 // Output: 2
 Console.WriteLine(
