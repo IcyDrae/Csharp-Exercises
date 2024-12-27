@@ -126,6 +126,23 @@ it has already been used.
             }
 
             return Total;
+/*
+Worst-Case time complexity analysis:
+
+Key operations:
+1. The for loop
+    -> Runs from the beginning to the end of "s"
+    -> Compares the current with the next number and decides how to add
+        to the total based on that
+    -> Skips the next number if the current number is smaller than
+        the next one
+    -> Each iteration performs performs constant-time work -> O(1)
+    -> for a string of length n, the loop runs at most n times, even
+        if the next number is skipped. The skip just adjusts the index.
+        Each element is processed at most once.
+
+The Worst-Case complexity is O(n).
+*/
         }
     }
 }
