@@ -75,6 +75,19 @@ Therefore, the formula is: ways(n) = ways(n−1) + ways(n−2)
             }
 
             return Ways[n];
+/*
+Worst-Case time complexity analysis:
+
+Key operations:
+1. The for loop
+    -> Runs from the third element to the end of "n"
+    -> For a string of length n, the loop runs at most n-2 times.
+2. The for loop contains a constant time operation. Setting the current ways
+    index to n-1 + n-2
+
+The Worst-Case complexity is O(n) because the constant 2 in n-2 in the loop
+is ignored.
+*/
         }
     }
 }

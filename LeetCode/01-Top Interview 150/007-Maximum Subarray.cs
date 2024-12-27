@@ -94,6 +94,19 @@ sum of the subarray so far.
             }
 
             return MaximumSum;
+/*
+Worst-Case time complexity analysis:
+
+Key operations:
+1. The for loop
+    -> Runs from the second element to the end of "nums"
+    -> For a string of length n, the loop runs at most n times.
+2. The for loop contains constant time operations. Comparing if the current
+    number increases the sum or not, and checking if the current subarray
+    sum is larger than the maximum sum.
+
+The Worst-Case complexity is O(n).
+*/
         }
     }
 }
