@@ -1,18 +1,10 @@
-﻿using SearchInsertPosition;
+﻿using RotateArray;
 
 Solution solution = new Solution();
 
 // Test cases
-// Output: 2
-Console.WriteLine(
-    solution.SearchInsert([1,3,5,6], 5)
-);
-// Output: 1
-Console.WriteLine(
-    solution.SearchInsert([1,3,5,6], 2)
-);
-// Output: 4
-Console.WriteLine(
-    solution.SearchInsert([1,3,5,6], 7)
-);
+// Output: [5,6,7,1,2,3,4]
+solution.Rotate([1,2,3,4,5,6,7], 3);
+// Output: [3,99,-1,-100]
+solution.Rotate([-1,-100,3,99], 2);
 
