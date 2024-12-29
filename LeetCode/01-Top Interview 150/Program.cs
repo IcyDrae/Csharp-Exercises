@@ -1,10 +1,13 @@
-﻿using RotateArray;
+﻿using PeakElement;
 
 Solution solution = new Solution();
 
 // Test cases
-// Output: [5,6,7,1,2,3,4]
-solution.Rotate([1,2,3,4,5,6,7], 3);
-// Output: [3,99,-1,-100]
-solution.Rotate([-1,-100,3,99], 2);
-
+// Output: 2
+Console.WriteLine(
+    solution.FindPeakElement([1,2,3,1])
+);
+// Output: 5
+Console.WriteLine(
+    solution.FindPeakElement([1,2,1,3,5,6,4])
+);
