@@ -1,13 +1,17 @@
-﻿using NumberOfWaysToSplitArray;
+﻿using UniqueLength3PalindromicSubsequences;
 
 Solution solution = new Solution();
 
 // Test cases
-// Output: 2
+// Output: 3
 Console.WriteLine(
-    solution.WaysToSplitArray([10,4,-8,7])
+    solution.CountPalindromicSubsequence("aabca")
 );
-// Output: 2
+// Output: 0
 Console.WriteLine(
-    solution.WaysToSplitArray([2,3,1,0])
+    solution.CountPalindromicSubsequence("adc")
+);
+// Output: 4
+Console.WriteLine(
+    solution.CountPalindromicSubsequence("bbcbaba")
 );
