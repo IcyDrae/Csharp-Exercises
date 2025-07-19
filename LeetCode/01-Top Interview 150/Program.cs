@@ -1,13 +1,13 @@
-﻿using RemoveElement;
+﻿using RemoveDuplicates;
 
 Solution solution = new Solution();
 
 // Test cases
-// Output: 2, nums = [2,2,_,_]
+// Output: 2, nums = [1,2,_]
 Console.WriteLine(
-    solution.RemoveElement([3,2,2,3], 3)
+    solution.RemoveDuplicates([1,1,2])
 );
-// Output: 5, nums = [0,1,4,0,3,_,_,_]
+// Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
 Console.WriteLine(
-    solution.RemoveElement([0,1,2,2,3,0,4,2], 2)
+    solution.RemoveDuplicates([0,0,1,1,1,2,2,3,3,4])
 );
