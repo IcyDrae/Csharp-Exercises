@@ -1,13 +1,15 @@
-﻿using RemoveDuplicates;
+﻿using RemoveDuplicatesII;
 
 Solution solution = new Solution();
 
 // Test cases
-// Output: 2, nums = [1,2,_]
+// Input: nums = [1,1,1,2,2,3]
+// Output: 5, nums = [1,1,2,2,3,_]
 Console.WriteLine(
-    solution.RemoveDuplicates([1,1,2])
+    solution.RemoveDuplicates([1,1,1,2,2,3])
 );
-// Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
+// Input: nums = [0,0,1,1,1,1,2,3,3]
+// Output: 7, nums = [0,0,1,1,2,3,3,_,_]
 Console.WriteLine(
-    solution.RemoveDuplicates([0,0,1,1,1,2,2,3,3,4])
+    solution.RemoveDuplicates([0,0,1,1,1,1,2,3,3])
 );
