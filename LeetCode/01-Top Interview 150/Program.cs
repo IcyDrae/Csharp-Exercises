@@ -1,15 +1,15 @@
-﻿using MajorityElement;
+﻿using MaxProfit;
 
 Solution solution = new Solution();
 
 // Test cases
-// Input: nums = [3,2,3]
-// Output: 3
+// Input: prices = [7,1,5,3,6,4]
+// Output: 5
 Console.WriteLine(
-    solution.MajorityElement([3,2,3])
+    solution.MaxProfit([7,1,5,3,6,4])
 );
-// Input: Input: nums = [2,2,1,1,1,2,2]
-// Output: 2
+// Input: prices = [7,6,4,3,1]
+// Output: 0
 Console.WriteLine(
-    solution.MajorityElement([2,2,1,1,1,2,2])
+    solution.MaxProfit([7,6,4,3,1])
 );
